@@ -5,4 +5,4 @@ def process(path):
     process = subprocess.Popen(["git","pull"], cwd="/var/www/html")
     process.wait()
     return "Success"
-run(host="localhost",port=8001)
+run(host="0.0.0.0",port=8001)
